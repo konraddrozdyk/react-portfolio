@@ -1,7 +1,9 @@
 import Header from "./components/Header";
 import Timeline from "./components/Timeline";
 import ProjectGrid from "./components/ProjectGrid";
+import Technologies from "./components/Technologies";
 import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -43,7 +45,9 @@ const App = () => {
         <h2 className="text-3xl font-semibold text-center mb-8">My Projects</h2>
         <ProjectGrid projects={projects} />
       </main>
+      <Technologies />
       <Contact />
+      <Resume />
       <Footer />
     </div>
   );
