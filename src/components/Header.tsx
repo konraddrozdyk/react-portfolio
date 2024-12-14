@@ -6,7 +6,7 @@ const Header = () => {
         <nav>
           <ul className="flex space-x-6">
             <li>
-              <a href="#about" className="hover:text-gray-400">
+              <a href="#timeline" className="hover:text-gray-400">
                 About
               </a>
             </li>
@@ -16,8 +16,18 @@ const Header = () => {
               </a>
             </li>
             <li>
+              <a href="#technologies" className="hover:text-gray-400">
+                Technologies
+              </a>
+            </li>
+            <li>
               <a href="#contact" className="hover:text-gray-400">
                 Contact
+              </a>
+            </li>
+            <li>
+              <a href="#resume" className="hover:text-gray-400">
+                Resume
               </a>
             </li>
           </ul>
