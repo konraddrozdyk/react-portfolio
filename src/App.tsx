@@ -1,6 +1,24 @@
 import Header from "./components/Header";
+import ProjectCard from "./components/ProjectCard";
 
 export default function App() {
+  const projects = [
+    {
+      title: "Project 1",
+      description: "This is a description for project 1",
+      link: "https://example.com",
+    },
+    {
+      title: "Project 2",
+      description: "This is a description for project 2",
+      link: "https://example.com",
+    },
+    {
+      title: "Project 3",
+      description: "This is a description for project 3",
+      link: "https://example.com",
+    },
+  ];
   return (
     <>
       <Header />
