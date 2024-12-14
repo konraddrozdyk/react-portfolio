@@ -1,4 +1,3 @@
-// src/components/ProjectGrid.tsx
 import React from "react";
 import ProjectCard from "./ProjectCard";
 
@@ -8,7 +7,7 @@ interface Project {
   link: string;
   year: string;
   imageUrl?: string;
-  detailedDescription?: string; // New prop for more details
+  detailedDescription?: string;
 }
 
 interface ProjectGridProps {
@@ -26,7 +25,7 @@ const ProjectGrid: React.FC<ProjectGridProps> = ({ projects }) => {
           link={project.link}
           year={project.year}
           imageUrl={project.imageUrl}
-          detailedDescription={project.detailedDescription} // Pass the detailed description
+          detailedDescription={project.detailedDescription}
         />
       ))}
     </div>
