@@ -1,5 +1,6 @@
 // src/components/ProjectCard.tsx
 import React, { useState } from "react";
+import Modal from "./Modal";
 
 interface ProjectCardProps {
   title: string;
@@ -18,16 +19,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   imageUrl,
   detailedDescription,
 }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const toggleExpand = () => {
-    setIsExpanded((prevState) => !prevState);
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
     <div
       className="bg-white rounded-lg shadow-lg p-6 mb-6 cursor-pointer"
-      onClick={toggleExpand}
+      onClick={openModal}
     >
       <div className="flex items-center space-x-4">
         {imageUrl && (
@@ -43,23 +48,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
       </div>
       <p className="text-gray-700 mt-2">{description}</p>
-
-      {isExpanded && (
-        <div className="mt-4 text-sm text-gray-800 transition-all duration-300 ease-in-out">
-          <h4 className="font-semibold mb-2">Project Details</h4>
-          <p>{detailedDescription}</p>
-          {link && (
-            <a
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 mt-2 inline-block hover:underline"
-            >
-              View Project
-            </a>
-          )}
-        </div>
-      )}
+      <Modal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        title={title}
+        description={description}
+        year={year}
+        detailedDescription={
+          detailedDescription || "No detailed description available."
+        }
+        link={link}
+        imageUrl={imageUrl}
+      />
     </div>
   );
 };
