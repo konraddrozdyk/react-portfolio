@@ -4,19 +4,17 @@ const LandingPage: React.FC = () => {
   return (
     <section
       id="landing"
-      className="h-screen bg-gradient-to-br from-blue-600 to-green-500 flex flex-col justify-center items-center text-white"
+      className="h-screen bg-gradient-to-br from-black via-gray-700 to-gray-300 flex flex-col justify-center items-center text-white"
     >
       <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden mb-6 shadow-lg border-4 border-white">
         <img
-          src="../public/konradimg.jpeg"
+          src="images/photo.jpeg"
           alt="Konrad"
           className="w-full h-full object-cover"
         />
       </div>
       <div className="text-center">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4">
-          Hello, I'm Konrad
-        </h1>
+        <h1 className="text-5xl md:text-6xl font-bold mb-4">Konrad Drozdyk</h1>
         <p className="text-xl md:text-2xl font-light mb-8">
           Full-Stack Developer | Test Automation Expert | Lifelong Learner
         </p>

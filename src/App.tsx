@@ -1,4 +1,3 @@
-import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Timeline from "./components/Timeline";
 import ProjectGrid from "./components/ProjectGrid";
