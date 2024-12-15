@@ -2,7 +2,10 @@ import timelineData from "../data/timelineData";
 
 const Timeline: React.FC = () => {
   return (
-    <section className="py-12 px-6 bg-gray-200" id="timeline">
+    <section
+      className="h-screen bg-gradient-to-br from-gray-300 via-gray-700 to-black flex flex-col justify-center items-center text-white"
+      id="timeline"
+    >
       <div className="container mx-auto">
         <h2 className="text-3xl font-semibold text-center mb-6">
           Career Timeline
