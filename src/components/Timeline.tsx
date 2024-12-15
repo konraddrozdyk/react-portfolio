@@ -3,7 +3,7 @@ import timelineData from "../data/timelineData";
 const Timeline: React.FC = () => {
   return (
     <section
-      className="h-screen bg-gradient-to-br from-gray-300 via-gray-700 to-black flex flex-col justify-center items-center text-white"
+      className="h-screen bg-transparent flex flex-col justify-center items-center text-white"
       id="timeline"
     >
       <div className="container mx-auto">

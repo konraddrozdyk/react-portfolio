@@ -1,5 +1,5 @@
 const Footer = () => (
-  <footer className="bg-gray-800 text-white p-4">
+  <footer className="bg-transparent text-white p-4">
     <div className="container mx-auto text-center">
       <p>&copy; 2024 Konrad . All rights reserved.</p>
       <div className="flex justify-center space-x-4">

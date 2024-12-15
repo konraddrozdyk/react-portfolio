@@ -7,7 +7,7 @@ const Technologies: React.FC = () => {
   return (
     <section
       id="technologies"
-      className="h-screen bg-gradient-to-br from-black via-gray-700 to-gray-300 flex flex-col justify-center items-center text-white"
+      className="h-screen bg-transparent flex flex-col justify-center items-center text-white"
     >
       <h2 className="text-3xl font-semibold text-center mb-6">Technologies</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl">

@@ -1,5 +1,5 @@
 const Resume: React.FC = () => (
-  <section id="resume" className="py-12 px-6 bg-gray-200">
+  <section id="resume" className="py-12 px-6 bg-transparent">
     <div className="container mx-auto text-center">
       <h2 className="text-3xl font-semibold mb-6">Download My Resume</h2>
       <a

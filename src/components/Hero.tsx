@@ -4,7 +4,7 @@ const LandingPage: React.FC = () => {
   return (
     <section
       id="landing"
-      className="h-screen bg-gradient-to-br from-black via-gray-700 to-gray-300 flex flex-col justify-center items-center text-white"
+      className="h-screen bg-transparent flex flex-col justify-center items-center text-white"
     >
       <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden mb-6 shadow-lg border-4 border-white">
         <img

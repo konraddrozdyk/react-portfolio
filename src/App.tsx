@@ -9,15 +9,10 @@ import projects from "./data/projects";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gradient-to-b from-black via-gray-800 to-gray-300 text-white">
       <Hero />
       <Timeline />
-      <main className="container mx-auto p-6">
-        <h2 className="text-3xl font-semibold text-center mb-8">
-          Highlighted projects
-        </h2>
-        <ProjectGrid projects={projects} />
-      </main>
+      <ProjectGrid projects={projects} />
       <Technologies />
       <Resume />
       <Contact />
