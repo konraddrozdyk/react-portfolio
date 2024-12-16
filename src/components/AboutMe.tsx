@@ -32,9 +32,9 @@ const AboutMe: React.FC = () => {
       {/* Left Section: Image and Stats */}
       <div className="flex-1 flex flex-col items-center mb-6 md:mb-0 md:pr-8">
         <img
-          src="/path-to-your-photo.jpg"
+          src="images/face.JPG"
           alt="Your Name"
-          className="rounded-full w-48 h-48 md:w-64 md:h-64 shadow-lg border-4 border-blue-300 mb-6"
+          className="rounded-full w-28 h-28 md:w-64 md:h-64 shadow-lg border-4 mb-6 bg-opacity-50"
         />
         <div className="text-center">
           <h2 className="text-4xl font-bold mb-4">About Me</h2>

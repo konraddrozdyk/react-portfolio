@@ -34,7 +34,7 @@ const LandingPage: React.FC = () => {
       <div className="flex space-x-6">
         <a
           href="#about"
-          className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-blue-100 transition bg-santafe"
+          className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-blue-100 transition bg-costa"
         >
           Get to know me
         </a>
