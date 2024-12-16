@@ -14,7 +14,11 @@ export default {
       costa: "#58602B",
       oxford: "#3D455C",
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        mountains: "url('images/mountains.jpg')",
+      },
+    },
   },
   plugins: [],
 };

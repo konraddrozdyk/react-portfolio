@@ -1,18 +1,16 @@
 import React from "react";
 import ReactTypingEffect from "react-typing-effect";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
 
 const LandingPage: React.FC = () => {
   return (
     <section
       id="landing"
-      className="h-screen bg-transparent flex flex-col justify-center items-center text-white"
+      className="h-screen bg-mountains flex flex-col justify-center items-center text-white"
     >
-      <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden mb-6 shadow-lg border-4 border-white">
-        <img
-          src="face.JPG"
-          alt="Konrad"
-          className="w-full h-full object-cover"
-        />
+      <div className="w-40 h-40 md:w-48 md:h-48 absolute top-10 left-10 text-4xl">
+        &lt;/salt &gt;
       </div>
       <div className="text-center">
         <h1 className="text-5xl md:text-6xl font-bold mb-4">Konrad Drozdyk</h1>
@@ -35,16 +33,17 @@ const LandingPage: React.FC = () => {
 
       <div className="flex space-x-6">
         <a
-          href="#timeline"
+          href="#about"
           className="px-6 py-3 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-blue-100 transition bg-santafe"
         >
-          View My Work
+          Get to know me
         </a>
         <a
           href="#contact"
           className="px-6 py-3 bg-transparent border border-white text-white font-semibold rounded-lg shadow-lg hover:bg-white hover:text-blue-600 transition bg-quincy"
         >
-          Contact Me
+          <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
+          Contact
         </a>
       </div>
     </section>
