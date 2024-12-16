@@ -8,7 +8,7 @@ const LandingPage: React.FC = () => {
     >
       <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden mb-6 shadow-lg border-4 border-white">
         <img
-          src="face_img_edited.jpeg"
+          src="face_img_edited.JPG"
           alt="Konrad"
           className="w-full h-full object-cover"
         />
