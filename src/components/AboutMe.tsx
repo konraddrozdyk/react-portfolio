@@ -47,9 +47,9 @@ const AboutMe: React.FC = () => {
             automation strategies. With{" "}
             <span className="font-semibold">X years of experience</span>, I
             specialize in <span className="font-semibold">.NET</span>,{" "}
-            <span className="font-semibold">React</span>, and{" "}
-            <span className="font-semibold">Test Automation</span>. My mission
-            is to deliver high-quality solutions that bridge the gap between
+            <span className="font-semibold">Test & Automation</span>, and{" "}
+            <span className="font-semibold">.NET</span>. My mission is to
+            deliver high-quality solutions that bridge the gap between
             innovation and functionality.
           </p>
           <a
@@ -60,18 +60,18 @@ const AboutMe: React.FC = () => {
           </a>
         </div>
 
-        <div className="bg-santafe flex flex-wrap justify-center gap-4 mt-8">
-          <div className="text-gray-800 p-4 rounded-lg shadow-lg w-48 text-center">
+        <div className="flex flex-wrap justify-center gap-4 mt-8">
+          <div className="bg-santafe text-gray-800 p-4 rounded-lg shadow-lg w-48 text-center">
             <h3 className="text-2xl font-semibold text-blue-600">5+</h3>
             <p>Years of Experience</p>
           </div>
-          <div className="text-gray-800 p-4 rounded-lg shadow-lg w-48 text-center">
+          <div className="bg-quincy text-gray-800 p-4 rounded-lg shadow-lg w-48 text-center">
             <h3 className="text-2xl font-semibold text-blue-600">20+</h3>
             <p>Completed Projects</p>
           </div>
-          <div className="text-gray-800 p-4 rounded-lg shadow-lg w-48 text-center">
+          <div className="bg-costa text-gray-800 p-4 rounded-lg shadow-lg w-48 text-center">
             <h3 className="text-2xl font-semibold text-blue-600">Key Skills</h3>
-            <p>React, .NET, Testing</p>
+            <p>Test & Automation, .NET</p>
           </div>
         </div>
       </div>
