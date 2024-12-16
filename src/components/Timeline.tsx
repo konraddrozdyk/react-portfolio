@@ -1,4 +1,6 @@
-import timelineData from "../data/timelineData";
+import React from "react";
+import timelineData, { TimelineItem } from "../data/timelineData";
+import TimelineCard from "./TimelineCard";
 
 const Timeline: React.FC = () => {
   return (
@@ -12,17 +14,13 @@ const Timeline: React.FC = () => {
         </h2>
         <div className="overflow-x-auto">
           <div className="flex space-x-8">
-            {timelineData.map((item, index) => (
-              <div
+            {timelineData.map((item: TimelineItem, index: number) => (
+              <TimelineCard
                 key={index}
-                className="min-w-[300px] bg-white p-6 rounded-lg shadow-lg flex flex-col items-center"
-              >
-                <h3 className="text-xl font-semibold mb-2">{item.date}</h3>
-                <h4 className="text-lg font-medium text-blue-500">
-                  {item.title}
-                </h4>
-                <p className="text-sm text-gray-700 mt-2">{item.description}</p>
-              </div>
+                date={item.date}
+                title={item.title}
+                description={item.description}
+              />
             ))}
           </div>
         </div>

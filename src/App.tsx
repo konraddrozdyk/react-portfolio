@@ -9,7 +9,7 @@ import projects from "./data/projects";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-black via-gray-800 to-gray-300 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-teal-200 via-blue-300 to-blue-100 text-white">
       <Hero />
       <Timeline />
       <ProjectGrid projects={projects} />
