@@ -10,7 +10,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
   description,
 }) => {
   return (
-    <div className="min-w-[300px] bg-white p-6 rounded-lg shadow-lg flex flex-col items-center">
+    <div className="min-w-[300px] bg-white p-6 rounded-lg shadow-lg flex flex-col items-center bg-santafe">
       <h3 className="text-xl font-semibold mb-2">{date}</h3>
       <h4 className="text-lg font-medium text-blue-500">{title}</h4>
       {description && (

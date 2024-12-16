@@ -5,7 +5,7 @@ import TimelineCard from "./TimelineCard";
 const Timeline: React.FC = () => {
   return (
     <section
-      className="h-screen bg-transparent flex flex-col justify-center items-center text-white"
+      className="h-screen bg-costa flex flex-col justify-center items-center text-white"
       id="timeline"
     >
       <div className="container mx-auto">
