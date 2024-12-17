@@ -27,14 +27,14 @@ const AboutMe: React.FC = () => {
   return (
     <section
       id="about"
-      className="flex flex-col md:flex-row items-center py-12 px-6 md:px-16"
+      className="flex flex-col md:flex-row items-center py-12 px-6 md:px-16 w-full"
     >
       {/* Left Section: Image and Stats */}
-      <div className="flex-1 flex flex-col items-center mb-6 md:mb-0 md:pr-8">
+      <div className="flex-1 flex flex-col items-center mb-6 md:mb-0 md:pr-8 border-8 w-2/4">
         <img
           src="images/face.JPG"
           alt="Your Name"
-          className="rounded-full w-28 h-28 md:w-64 md:h-64 shadow-lg border-4 mb-6 bg-opacity-50"
+          className="rounded-full w-28 h-28 shadow-lg border-4 mb-6 bg-opacity-50"
         />
         <div className="text-center">
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
@@ -71,7 +71,7 @@ const AboutMe: React.FC = () => {
       </div>
 
       {/* Right Section: Tabs */}
-      <div className="flex-1 w-full max-w-xl">
+      <div className="flex-1 w-2/4 max-w-xl border-8 border-costa absolute bottom-100">
         {/* Tabs Navigation */}
         <div className="flex justify-center md:justify-start space-x-4 mb-4">
           {tabs.map((tab) => (
