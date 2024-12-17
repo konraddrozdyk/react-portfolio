@@ -10,7 +10,7 @@ const LandingPage: React.FC = () => {
       className="h-screen bg-mountains flex flex-col justify-center items-center text-white"
     >
       <div className="w-40 h-40 md:w-48 md:h-48 absolute top-10 left-10 text-4xl">
-        &lt;/salt &gt;
+        &lt; /salt &gt;
       </div>
       <div className="text-center">
         <h1 className="text-5xl md:text-6xl font-bold mb-4">Konrad Drozdyk</h1>
@@ -22,9 +22,9 @@ const LandingPage: React.FC = () => {
                 "Test Automation Specialist",
                 "Lifelong Learner",
               ]}
-              speed={200}
-              eraseSpeed={100}
-              typingDelay={200}
+              speed={50}
+              eraseSpeed={50}
+              typingDelay={100}
               className="text-blue-600"
             />
           </h2>
