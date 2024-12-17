@@ -52,12 +52,6 @@ const AboutMe: React.FC = () => {
             deliver high-quality solutions that bridge the gap between
             innovation and functionality.
           </p>
-          <a
-            href="#contact"
-            className="bg-quincy inline-block px-6 py-3 text-white rounded-lg shadow-lg transition-all"
-          >
-            Get in Touch
-          </a>
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 mt-8">
