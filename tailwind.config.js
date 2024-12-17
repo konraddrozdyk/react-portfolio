@@ -7,12 +7,17 @@ export default {
     "./src/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      hero: "Proxima Nova",
+    },
     colors: {
       background: "#99ABB9",
       santafe: "#B37856",
       quincy: "#60402B",
       costa: "#58602B",
       oxford: "#3D455C",
+      warmyellow: "#EEC61F",
+      seablue: "#5fd0ff",
     },
     extend: {
       backgroundImage: {
