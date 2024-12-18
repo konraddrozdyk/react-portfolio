@@ -2,6 +2,7 @@ import React from "react";
 import ReactTypingEffect from "react-typing-effect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 const LandingPage: React.FC = () => {
   return (
@@ -62,6 +63,9 @@ const LandingPage: React.FC = () => {
           <FontAwesomeIcon icon={faBriefcase} className="mr-2" />
           Contact
         </a>
+      </div>
+      <div>
+        <FontAwesomeIcon icon={faArrowDown} className="absolute bottom-5" />{" "}
       </div>
     </section>
   );
