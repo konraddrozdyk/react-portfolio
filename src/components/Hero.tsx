@@ -65,7 +65,10 @@ const LandingPage: React.FC = () => {
         </a>
       </div>
       <div>
-        <FontAwesomeIcon icon={faArrowDown} className="absolute bottom-5" />{" "}
+        <FontAwesomeIcon
+          icon={faArrowDown}
+          className="absolute bottom-5 h-8 w-8"
+        />{" "}
       </div>
     </section>
   );
