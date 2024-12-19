@@ -1,5 +1,3 @@
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
 const AboutMe: React.FC = () => {
@@ -34,27 +32,26 @@ const AboutMe: React.FC = () => {
           alt="Your Name"
           className="rounded-full w-28 h-28 object-cover border-4 mb-6"
         />
-        <h2 className="text-3xl mb-4">About Me</h2>
-        <p className="text-lg text-center mb-6">
-          Hi, I'm <span className="text-blue-600">[Your Name]</span>, a
-          passionate Full-Stack Developer with a knack for building robust
-          applications and crafting efficient test automation strategies. With{" "}
-          <span className="font-serif">X years of experience</span>, I
+        <h2 className="mb-4">About Me</h2>
+        <p className="text-center mb-6">
+          Hi, I'm <span>[Your Name]</span>, a passionate Full-Stack Developer
+          with a knack for building robust applications and crafting efficient
+          test automation strategies. With <span>X years of experience</span>, I
           specialize in .NET, Test & Automation, and .NET. My mission is to
           deliver high-quality solutions that bridge the gap between innovation
           and functionality.
         </p>
         <div className="flex justify-between w-full max-w-lg gap-6">
           <div className="text-center flex-1 p-4 rounded-lg shadow-lg">
-            <h3 className="text-2xl">3+</h3>
+            <h3>3+</h3>
             <p>Years of Experience</p>
           </div>
           <div className="text-center flex-1 p-4 rounded-lg shadow-lg">
-            <h3 className="text-2xl">10+</h3>
+            <h3>10+</h3>
             <p>Completed Projects</p>
           </div>
           <div className="text-center flex-1 p-4 rounded-lg shadow-lg">
-            <h3 className="text-2xl">Key Skills</h3>
+            <h3>Key Skills</h3>
             <p>Test & Automation, .NET</p>
           </div>
         </div>
@@ -68,9 +65,7 @@ const AboutMe: React.FC = () => {
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
                 className={`px-6 py-2 rounded-lg transition-all ${
-                  activeTab === tab.id
-                    ? "border-2 border-blue-500"
-                    : "border-2 border-gray-300"
+                  activeTab === tab.id ? "border-2" : "border-2"
                 }`}
               >
                 {tab.label}
