@@ -9,6 +9,7 @@ export default {
   theme: {
     fontFamily: {
       hero: "Proxima Nova",
+      garamond: ['"EB Garamond"', "serif"],
     },
     colors: {
       background: "#99ABB9",
