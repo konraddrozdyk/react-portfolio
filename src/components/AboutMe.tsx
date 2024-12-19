@@ -1,3 +1,5 @@
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 
 const AboutMe: React.FC = () => {
@@ -25,72 +27,59 @@ const AboutMe: React.FC = () => {
   ];
 
   return (
-    <section
-      id="about"
-      className="flex flex-col md:flex-row items-center py-12 px-6 md:px-16 w-full"
-    >
-      {/* Left Section: Image and Stats */}
-      <div className="flex-1 flex flex-col items-center mb-6 md:mb-0 md:pr-8 border-8 w-2/4">
+    <section id="about" className="flex flex-col">
+      <div className="flex justify-center items-center p-8 w-7/10 h-screen flex-col">
         <img
           src="images/face.JPG"
           alt="Your Name"
-          className="rounded-full w-28 h-28 shadow-lg border-4 mb-6 bg-opacity-50"
+          className="rounded-full w-28 h-28 object-cover border-4 mb-6"
         />
-        <div className="text-center">
-          <h2 className="text-4xl mb-4">About Me</h2>
-          <p className="text-lg leading-relaxed mb-6">
-            Hi, I'm <span className="text-blue-600">[Your Name]</span>, a
-            passionate{" "}
-            <span className="font-garamond">Full-Stack Developer</span> with a
-            knack for building robust applications and crafting efficient test
-            automation strategies. With{" "}
-            <span className="font-garamond">X years of experience</span>, I
-            specialize in <span className="font-garamond">.NET</span>,{" "}
-            <span className="font-garamond">Test & Automation</span>, and{" "}
-            <span className="font-garamond">.NET</span>. My mission is to
-            deliver high-quality solutions that bridge the gap between
-            innovation and functionality.
-          </p>
-        </div>
-
-        <div className="flex flex-wrap justify-center gap-4 mt-8">
-          <div className="bg-santafe text-gray-800 p-4 rounded-lg shadow-lg w-48 text-center">
-            <h3 className="text-2xl text-blue-600">5+</h3>
+        <h2 className="text-3xl mb-4">About Me</h2>
+        <p className="text-lg text-center mb-6">
+          Hi, I'm <span className="text-blue-600">[Your Name]</span>, a
+          passionate Full-Stack Developer with a knack for building robust
+          applications and crafting efficient test automation strategies. With{" "}
+          <span className="font-serif">X years of experience</span>, I
+          specialize in .NET, Test & Automation, and .NET. My mission is to
+          deliver high-quality solutions that bridge the gap between innovation
+          and functionality.
+        </p>
+        <div className="flex justify-between w-full max-w-lg gap-6">
+          <div className="text-center flex-1 p-4 rounded-lg shadow-lg">
+            <h3 className="text-2xl">3+</h3>
             <p>Years of Experience</p>
           </div>
-          <div className="bg-quincy text-gray-800 p-4 rounded-lg shadow-lg w-48 text-center">
-            <h3 className="text-2xl">20+</h3>
+          <div className="text-center flex-1 p-4 rounded-lg shadow-lg">
+            <h3 className="text-2xl">10+</h3>
             <p>Completed Projects</p>
           </div>
-          <div className="bg-costa text-gray-800 p-4 rounded-lg shadow-lg w-48 text-center">
+          <div className="text-center flex-1 p-4 rounded-lg shadow-lg">
             <h3 className="text-2xl">Key Skills</h3>
             <p>Test & Automation, .NET</p>
           </div>
         </div>
       </div>
 
-      {/* Right Section: Tabs */}
-      <div className="flex-1 w-2/4 max-w-xl border-8 border-costa absolute bottom-100">
-        {/* Tabs Navigation */}
-        <div className="flex justify-center md:justify-start space-x-4 mb-4">
-          {tabs.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`px-4 py-2 rounded-lg transition-all ${
-                activeTab === tab.id
-                  ? "bg-costa text-white"
-                  : "bg-quincy hover:bg-gray-300"
-              }`}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
-
-        {/* Tab Content */}
-        <div className="bg-santafe rounded-lg shadow-lg p-6">
-          {tabs.find((tab) => tab.id === activeTab)?.content}
+      <div className="flex justify-center items-center p-8 w-7/10 h-screen">
+        <div className="flex flex-col items-center w-full">
+          <div className="flex space-x-4 mb-6">
+            {tabs.map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`px-6 py-2 rounded-lg transition-all ${
+                  activeTab === tab.id
+                    ? "border-2 border-blue-500"
+                    : "border-2 border-gray-300"
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+          <div className="rounded-lg shadow-lg p-6 w-full max-w-xl">
+            {tabs.find((tab) => tab.id === activeTab)?.content}
+          </div>
         </div>
       </div>
     </section>
