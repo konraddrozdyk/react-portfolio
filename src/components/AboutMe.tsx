@@ -1,28 +1,28 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 const AboutMe: React.FC = () => {
-  const [activeTab, setActiveTab] = useState("journey");
+  // const [activeTab, setActiveTab] = useState("journey");
 
-  const tabs = [
-    {
-      id: "journey",
-      label: "Professional Journey",
-      content:
-        "I started my career in software testing, building expertise in automation, performance, and security testing. Over the years, I've transitioned into full-stack development, focusing on creating seamless user experiences and robust backend systems.",
-    },
-    {
-      id: "skills",
-      label: "Technical Skills",
-      content:
-        "Proficient in .NET, React, Tailwind CSS, Selenium, and REST API development. Adept at integrating test automation strategies into CI/CD pipelines to enhance software quality and delivery speed.",
-    },
-    {
-      id: "hobbies",
-      label: "Hobbies & Interests",
-      content:
-        "When I'm not coding, I enjoy exploring nature through hiking, capturing moments through photography, and diving into sci-fi novels. I also have a passion for learning new technologies and participating in hackathons.",
-    },
-  ];
+  // const tabs = [
+  //   {
+  //     id: "journey",
+  //     label: "Professional Journey",
+  //     content:
+  //       "I started my career in software testing, building expertise in automation, performance, and security testing. Over the years, I've transitioned into full-stack development, focusing on creating seamless user experiences and robust backend systems.",
+  //   },
+  //   {
+  //     id: "skills",
+  //     label: "Technical Skills",
+  //     content:
+  //       "Proficient in .NET, React, Tailwind CSS, Selenium, and REST API development. Adept at integrating test automation strategies into CI/CD pipelines to enhance software quality and delivery speed.",
+  //   },
+  //   {
+  //     id: "hobbies",
+  //     label: "Hobbies & Interests",
+  //     content:
+  //       "When I'm not coding, I enjoy exploring nature through hiking, capturing moments through photography, and diving into sci-fi novels. I also have a passion for learning new technologies and participating in hackathons.",
+  //   },
+  // ];
 
   return (
     <section id="about" className="flex flex-col">
@@ -64,7 +64,7 @@ const AboutMe: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center p-8 w-7/10 h-screen">
+      {/* <div className="flex justify-center items-center p-8 w-7/10 h-screen">
         <div className="flex flex-col items-center w-full">
           <div className="flex space-x-4 mb-6">
             {tabs.map((tab) => (
@@ -83,7 +83,7 @@ const AboutMe: React.FC = () => {
             {tabs.find((tab) => tab.id === activeTab)?.content}
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
