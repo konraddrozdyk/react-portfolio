@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-gradient from-quincy to-santafe font-garamond">
+    <div className="min-h-screen font-garamond">
       <Hero />
       <AboutMe />
       <Resume />
