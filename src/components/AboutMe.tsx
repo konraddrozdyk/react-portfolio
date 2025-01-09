@@ -32,7 +32,7 @@ const AboutMe: React.FC = () => {
           alt="Your Name"
           className="rounded-full w-28 h-28 object-cover border-4 mb-6"
         />
-        <h2 className="mb-4">About Me</h2>
+        <h2 className="mb-4 text-4xl text-quincy">About Me</h2>
         <p className="text-center mb-6">
           I am a passionate and detail-oriented software developer with a strong
           foundation in software testing and test automation. With experience in
