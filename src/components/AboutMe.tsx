@@ -34,25 +34,32 @@ const AboutMe: React.FC = () => {
         />
         <h2 className="mb-4">About Me</h2>
         <p className="text-center mb-6">
-          Hi, I'm <span>[Your Name]</span>, a passionate Full-Stack Developer
-          with a knack for building robust applications and crafting efficient
-          test automation strategies. With <span>X years of experience</span>, I
-          specialize in .NET, Test & Automation, and .NET. My mission is to
-          deliver high-quality solutions that bridge the gap between innovation
-          and functionality.
+          I am a passionate and detail-oriented software developer with a strong
+          foundation in software testing and test automation. With experience in
+          both backend and frontend development, I excel at building
+          high-quality, reliable solutions. My technical skills include C#,
+          JavaScript, TypeScript, and frameworks like ReactJS and .NET, combined
+          with expertise in tools such as Selenium, Playwright, and Docker.
+          Having worked on diverse projects in agile environments, I bring a
+          unique perspective to problem-solving and thrive on continuous
+          learning to refine my craft. Whether it's leading teams, collaborating
+          with stakeholders, or implementing CI/CD pipelines, I am committed to
+          delivering efficient and innovative results. When I’m not coding, I
+          enjoy tackling new challenges and exploring ways to enhance my skills.
+          Let's build something amazing together!
         </p>
         <div className="flex justify-between w-full max-w-lg gap-6">
-          <div className="text-center flex-1 p-4 rounded-lg shadow-lg">
+          <div className="text-center flex-1 p-4 rounded-lg shadow-lg bg-warmyellow">
             <h3>3+</h3>
             <p>Years of Experience</p>
           </div>
-          <div className="text-center flex-1 p-4 rounded-lg shadow-lg">
-            <h3>10+</h3>
-            <p>Completed Projects</p>
+          <div className="text-center flex-1 p-4 rounded-lg shadow-lg bg-seablue">
+            <h3>Quality</h3>
+            <p>Test & Test automation</p>
           </div>
-          <div className="text-center flex-1 p-4 rounded-lg shadow-lg">
-            <h3>Key Skills</h3>
-            <p>Test & Automation, .NET</p>
+          <div className="text-center flex-1 p-4 rounded-lg shadow-lg bg-santafe">
+            <h3>Development</h3>
+            <p>.NET, Java and TypeScript</p>
           </div>
         </div>
       </div>
