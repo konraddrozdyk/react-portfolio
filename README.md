@@ -5,3 +5,5 @@ This is a personal portfolio website built with React and TypeScript. It showcas
 ## Demo
 
 [Live Demo](https://konraddrozdyk.github.io/react-portfolio/)
+
+KD
